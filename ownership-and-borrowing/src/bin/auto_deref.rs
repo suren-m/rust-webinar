@@ -4,11 +4,7 @@ fn main() {
     println!("Num is {} and address is {:p}", num, &num);
     println!("Num2 is {} and its address is {:p}", num2, &num2);
 
-    change_num(&mut num);
-    println!("After change: Num is {} and its address is {:p}", num, &num);
-}
-
-fn change_num(num_ref: &mut i32) {
-    // let num_ref = &mut num; //mutable pointer
+    let num_ref = &mut num; //mutable ref pointer
     *num_ref = 100;
+    println!("After change: Num is {} and its address is {:p}", num, &num);
 }
