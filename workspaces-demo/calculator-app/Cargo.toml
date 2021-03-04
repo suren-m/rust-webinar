@@ -3,7 +3,10 @@ name = "calculator-app"
 version = "0.1.0"
 authors = ["suren <suren-m>"]
 edition = "2018"
+default-run = "basic-calc"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+numeric-lib = { path = "../numeric-lib" }
+scientific-lib = { path = "../scientific-lib" }

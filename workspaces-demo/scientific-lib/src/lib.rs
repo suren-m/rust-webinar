@@ -1,3 +1,6 @@
+pub mod factorial;
+pub mod fibonacci;
+
 #[cfg(test)]
 mod tests {
     #[test]
